@@ -10,12 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-- stage: Biuld
+- stage: Build
   displayName: Build the Application
+  
   jobs:
-  - job: Build
-    displayName: Build Job
-    steps:
-    - script: echo Hello, world!
-      displayName: 'Run a one-line script'
+    - job: Build
+      steps:
+        - script: echo 'YAML Pipeline'
+
 
