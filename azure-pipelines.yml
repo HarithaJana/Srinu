@@ -15,7 +15,9 @@ stages:
   
   jobs:
     - job: Build
+      displayName: Build Job
       steps:
+        - bash: echo 'Repo Name $(Build.Repository.Name)'
         - script: echo 'YAML Pipeline'
 
 
